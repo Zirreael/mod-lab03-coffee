@@ -1,6 +1,7 @@
+// Copyright 2023 Zirraeal VisualStudio
 #include "Automata.h"
 #include<iostream>
-#include<string.h>
+#include<string>
 
 Automata::Automata() {
     count_menu = 4;
@@ -29,7 +30,7 @@ void Automata::coin(int sum) {
 
 void Automata::get_menu() {
     for (int i = 0; i < count_menu; i++) {
-        std::cout << i + 1 << " " << menu[i] << " -- Цена: " << prices[i] << " руб.\n";
+        std::cout << i + 1 << " " << menu[i] << "Цена: " << prices[i] << "\n";
     }
 }
 
@@ -51,8 +52,9 @@ void Automata::check(int number) {
     if (cash < prices[number - 1]) {
         std::cout << "Недостаточно денег!\n";
         state = WAIT;
-    } else
+    } else {
         cook(number);
+    }
 }
 
 void Automata::cancel() {
