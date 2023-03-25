@@ -39,14 +39,19 @@ std::string Automata::get_state() {
     switch (state) {
     case OFF:
         st = "OFF";
+        break;
     case COOK:
         st = "COOK";
+        break;
     case ACCEPT:
         st = "ACCEPT";
+        break;
     case WAIT:
         st = "WAIT";
+        break;
     case CHECK:
         st = "CHECK";
+        break;
     }
     return st;
 }
