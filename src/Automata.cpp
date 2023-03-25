@@ -60,6 +60,7 @@ void Automata::choice(int number) {
     if (state == ACCEPT) {
         if (number < 1 || number > count_menu) {
             std::cout << "Введен неверный номер напитка\n";
+            state = WAIT;
         } else {
             state = CHECK;
             check(number);
