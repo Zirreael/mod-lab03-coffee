@@ -6,7 +6,7 @@
 class Automata {
  public:
   enum State { OFF, WAIT, CHECK, ACCEPT, COOK };
-
+ 
  private:
   int cash;
   int* prices;
@@ -22,7 +22,7 @@ class Automata {
   void get_menu();
   void choice(int);
   void cancel();
-  State get_state();
+  std::string get_state();
 
  private:
   void check(int);
