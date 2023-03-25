@@ -35,18 +35,20 @@ void Automata::get_menu() {
 }
 
 std::string Automata::get_state() {
+    std::string st = "";
     switch (state) {
     case OFF:
-        return "OFF";
+        st = "OFF";
     case COOK:
-        return "COOK";
+        st = "COOK";
     case ACCEPT:
-        return "ACCEPT";
+        st = "ACCEPT";
     case WAIT:
-        return "WAIT";
+        st = "WAIT";
     case CHECK:
-        return "CHECK";
+        st = "CHECK";
     }
+    return st;
 }
 
 void Automata::choice(int number) {
