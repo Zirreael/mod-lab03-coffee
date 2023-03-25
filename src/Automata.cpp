@@ -34,7 +34,7 @@ void Automata::get_menu() {
     }
 }
 
-Automata::State Automata::get_state() {
+std::string Automata::get_state() {
     switch (state) {
     case OFF:
         return "OFF";
