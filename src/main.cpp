@@ -1,7 +1,6 @@
 //Copyright 2023 Zirraeal VisualStudio
 #include <iostream>
 #include <string>
-#include <Windows.h>
 #include "Automata.h"
 
 int main() {
