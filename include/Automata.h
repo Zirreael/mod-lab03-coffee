@@ -1,19 +1,23 @@
+// Copyright 2023 Zirraeal VisualStudio
 #pragma once
 #include <iostream>
-#include <string.h>
-#include "Windows.h"
+#include <string>
+#include <Windows.h>
 
 class Automata {
+	
 public:
+	
     enum State {
-        OFF,
-        WAIT,
-        ACCEPT,
-        CHECK,
-        COOK
+	    OFF,
+	    WAIT,
+	    CHECK,
+	    ACCEPT,
+	    COOK
 	    };
-
+	
 private:
+	
     int cash;
     int* prices;
     int count_menu;
@@ -21,6 +25,7 @@ private:
     string* menu;
 	
 public:
+	
     Automata();
     void on();
     void off();
@@ -31,6 +36,7 @@ public:
     void cancel();
 	
 private:
+	
     void check(int);
     void cook(int);
     void finish(int);
