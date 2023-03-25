@@ -5,14 +5,8 @@
 
 class Automata {
  public:
-  enum State {
-   OFF,
-   WAIT,
-   CHECK,
-   ACCEPT,
-   COOK
-  };
-
+  enum State { OFF, WAIT, CHECK, ACCEPT, COOK };
+ 
  private:
   int cash;
   int* prices;
