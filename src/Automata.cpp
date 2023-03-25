@@ -5,7 +5,7 @@
 
 Automata::Automata() {
     count_menu = 4;
-    menu = new string[count_menu]{ "Эспрессо", "Капучино", "Какао", "Чай" };
+    menu = new std::string[count_menu]{ "Эспрессо", "Капучино", "Какао", "Чай" };
     prices = new int[count_menu] {50, 60, 55, 40};
     state = OFF;
     cash = 0;
