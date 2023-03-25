@@ -1,12 +1,10 @@
+//Copyright 2023 Zirraeal VisualStudio
 #include <iostream>
 #include <string>
 #include <Windows.h>
 #include "Automata.h"
 
-using namespace std;
-
-int main()
-{
+int main() {
     setlocale(LC_ALL, "Russian");
     Automata coffee;
     coffee.get_menu();
