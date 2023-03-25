@@ -69,7 +69,7 @@ void Automata::cook(int number) {
 }
 
 void Automata::finish(int sum) {
-    cout << "Ваш напиток готов!\n";
+    std::cout << "Ваш напиток готов!\n";
     if (sum > 0)
         std::cout << "Ваша сдача: " << sum << "\n";
     state = WAIT;
