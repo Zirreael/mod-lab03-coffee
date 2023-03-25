@@ -4,34 +4,34 @@
 #include <string>
 
 class Automata {
-    public:
-    enum State {
-        OFF,
-        WAIT,
-        CHECK,
-        ACCEPT,
-        COOK
-    };
+ public:
+  enum State {
+   OFF,
+   WAIT,
+   CHECK,
+   ACCEPT,
+   COOK
+  };
 
-    private:
-    int cash;
-    int* prices;
-    int count_menu;
-    State state;
-    string* menu;
+ private:
+  int cash;
+  int* prices;
+  int count_menu;
+  State state;
+  string* menu;
 
-    public:
-    Automata();
-    void on();
-    void off();
-    void coin(int);
-    void get_menu();
-    void choice(int);
-    void cancel();
-    State get_state();
+ public:
+  Automata();
+  void on();
+  void off();
+  void coin(int);
+  void get_menu();
+  void choice(int);
+  void cancel();
+  State get_state();
 
-    private:
-    void check(int);
-    void cook(int);
-    void finish(int);
+ private:
+  void check(int);
+  void cook(int);
+  void finish(int);
 };
