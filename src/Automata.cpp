@@ -65,16 +65,6 @@ void Automata::cancel() {
 void Automata::cook(int number) {
     state = COOK;
     std::cout << "Напиток готовится. Ожидайте...\n";
-    switch (number) {
-    case 1:
-        Sleep(8000);
-    case 2:
-        Sleep(10000);
-    case 3:
-        Sleep(9000);
-    case 4:
-        Sleep(5000);
-    }
     finish(cash - prices[number - 1]);
 }
 
