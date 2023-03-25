@@ -18,7 +18,7 @@ class Automata {
   int* prices;
   int count_menu;
   State state;
-  string* menu;
+  std::string* menu;
 
  public:
   Automata();
