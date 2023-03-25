@@ -34,7 +34,20 @@ void Automata::get_menu() {
     }
 }
 
-Automata::State Automata::get_state() { return state; }
+Automata::State Automata::get_state() {
+    switch (state) {
+    case OFF:
+        return "OFF";
+    case COOK:
+        return "COOK";
+    case ACCEPT:
+        return "ACCEPT";
+    case WAIT:
+        return "WAIT";
+    case CHECK:
+        return "CHECK";
+    }
+}
 
 void Automata::choice(int number) {
     if (state == ACCEPT) {
